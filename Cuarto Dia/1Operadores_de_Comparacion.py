@@ -1,0 +1,2 @@
+bool = 10==25
+bool2 = 'Blanco' == 'Negro' #PUEDO COMPARAR STRINGS, CUIDAR MAYUSCULAS
