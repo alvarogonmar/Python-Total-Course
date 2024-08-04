@@ -7,12 +7,14 @@ import webbrowser
 import datetime
 import wikipedia
 import requests
-
+from dotenv import load_dotenv
+import os
 #VOICE
 id1 = 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-US_ZIRA_11.0'
 
 #API KEY OpenWeatherMap
-api_key = 'fdbd8ce60cdd5bea2bdef022d620959a'
+load_dotenv()
+api_key = os.getenv('API_KEY')
 
 
 #LISTEN MICROPHONE, RETURNING THE AUDIO AS TEXT
